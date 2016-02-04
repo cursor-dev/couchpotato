@@ -5,6 +5,8 @@ ENV LANG='en_US.UTF-8' \
     LANGUAGE='en_US.UTF-8' \
     TERM='xterm'
 
+RUN apt-get install python-lxml
+
 RUN git clone git://github.com/RuudBurger/CouchPotatoServer.git /opt/couchpotato
 
 VOLUME ["/volumes/config", "/volumes/media", "/volumes/downloads"]
