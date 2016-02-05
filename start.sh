@@ -4,6 +4,8 @@ mkdir -p /volumes/config
 mkdir -p /volumes/media
 mkdir -p /volumes/downloads
 
+chown -R root:media /volumes/config
+
 cd /opt/couchpotato
 touch /volumes/config/CouchPotato.cfg
 
