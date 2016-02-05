@@ -7,6 +7,8 @@ ENV LANG='en_US.UTF-8' \
 
 RUN git clone git://github.com/RuudBurger/CouchPotatoServer.git /opt/couchpotato
 
+RUN pip install --upgrade pyopenssl
+
 VOLUME ["/volumes/config", "/volumes/media", "/volumes/downloads"]
 
 ADD ./start.sh /start.sh
