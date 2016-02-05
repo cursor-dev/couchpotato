@@ -1,11 +1,13 @@
 FROM cursor/mbase
-MAINTAINER Ryan Pederson <ryan@pederson.ca>
+yMAINTAINER Ryan Pederson <ryan@pederson.ca>
 
 ENV LANG='en_US.UTF-8' \
     LANGUAGE='en_US.UTF-8' \
     TERM='xterm'
 
 RUN git clone git://github.com/RuudBurger/CouchPotatoServer.git /opt/couchpotato
+
+RUN apt-get install python
 
 RUN pip install --upgrade pyopenssl
 
