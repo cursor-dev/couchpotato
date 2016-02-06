@@ -12,8 +12,6 @@ RUN apt-get -q update && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /tmp/*
 
-RUN pip install --upgrade pyopenssl
-
 RUN git clone git://github.com/RuudBurger/CouchPotatoServer.git /opt/couchpotato
 
 VOLUME ["/volumes/config", "/volumes/media", "/volumes/downloads"]
