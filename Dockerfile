@@ -7,7 +7,7 @@ ENV LANG='en_US.UTF-8' \
 
 RUN git clone git://github.com/RuudBurger/CouchPotatoServer.git /opt/couchpotato
 
-RUN apt-get install python
+RUN apt-get -y install python python-pip
 
 RUN pip install --upgrade pyopenssl
 
