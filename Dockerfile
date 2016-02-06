@@ -1,5 +1,5 @@
 FROM cursor/mbase
-yMAINTAINER Ryan Pederson <ryan@pederson.ca>
+MAINTAINER Ryan Pederson <ryan@pederson.ca>
 
 ENV LANG='en_US.UTF-8' \
     LANGUAGE='en_US.UTF-8' \
