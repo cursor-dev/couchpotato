@@ -14,7 +14,7 @@ RUN apt-get -q update && \
 
 RUN git clone git://github.com/RuudBurger/CouchPotatoServer.git /opt/couchpotato
 
-VOLUME ["/volumes/config", "/volumes/media", "/volumes/downloads"]
+VOLUME ["/volumes/config","/volumes/media","/volumes/downloads"]
 
 ADD ./start.sh /start.sh
 RUN chmod u+x  /start.sh
