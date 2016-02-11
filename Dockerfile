@@ -31,4 +31,4 @@ VOLUME ["/volumes/config","/volumes/downloads","/volumes/media"]
 
 EXPOSE 5050
 
-RUN ["/start.sh"]
+CMD ["/start.sh"]
